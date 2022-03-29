@@ -1,0 +1,38 @@
+version: "3.0"
+
+stories:
+
+- story: greet path1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - action: utter_how_can_i_help
+  - intent: query_service_timings
+  - action: utter_service_timings
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_goodbye
+
+- story: greet path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - action: utter_how_can_i_help
+  - intent: query_address
+  - action: utter_address
+  - intent: query_service_timings
+  - action: utter_service_timings
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_goodbye
+
+- story: timings path
+  steps:
+  - intent: query_service_timings
+  - action: utter_greet
+  - action: utter_service_timings
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_goodbye
+
+

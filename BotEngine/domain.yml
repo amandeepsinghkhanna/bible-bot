@@ -1,0 +1,48 @@
+version: "3.0"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - bot_challenge
+  - query_service_timings
+  - query_address
+  - query_contact_details
+  - query_offering_details
+
+responses:
+  utter_greet:
+  - text: "Hey! How are you?"
+  
+  utter_how_can_i_help:
+  - text: "Let me fetch you the details"
+  - text: "Let me help you with the details"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+  
+  utter_bye:
+  - text: "See you, God bless you!"
+
+  utter_service_timings:
+  - text: "Here are the service details - would get details from server"
+
+  utter_address:
+  - text: "The church service happens in below location - insert google map or address"
+
+  utter_contact_details:
+  - text: "The contact details are as below - fetch contact details and display"
+
+  utter_offering_details:
+  - text: "You can send us your offerings at - gives secure payment link/bank details"
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

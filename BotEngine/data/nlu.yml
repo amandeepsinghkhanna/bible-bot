@@ -1,0 +1,108 @@
+version: "3.0"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+    - Praise the Lord!
+    - Praise God! How are you?
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+    - God bless you!
+    - Jesus Loves You!
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+    - that helps
+    - thanks that helps
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+
+- intent: query_service_timings
+  examples: |
+    - can you help with church service timings?
+    - hey, what's happening in church this week?
+    - at what time is tamil service happening?
+    - english service timing
+    - tamil service timing
+    - kannada service timing
+    - hindi service
+
+- intent: query_address
+  examples: |
+    - location pls
+    - can you send the location?
+    - address pls
+    - can you send the location?
+    - church address?
+    - where?
+    - send the loction
+    - church address
+    - church location
+    - how to reach church?
+
+- intent: query_contact_details
+  examples: |
+    - contact no
+    - contact details
+    - contact number
+    - phone number
+    - call center number
+    - number
+    - send the phone number
+    - email id
+    - please send the phone number
+
+- intent: query_offering_details
+  examples: |
+    - how can i send the offering
+    - need to send tithes
+    - payment link to send offerings
+    - how to give?
+    - how can i send my tithes
+    - link to send offering to church
+    - how to give online
+    - how to send offering online
